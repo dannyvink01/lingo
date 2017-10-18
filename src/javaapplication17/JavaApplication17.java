@@ -23,10 +23,8 @@ public class JavaApplication17 {
             compareLetter4(letter, nextword);
             letter = guessedWord.charAt(4);
             compareLetter5(letter, nextword);
-        }
-        
-        
-            
+            compareWord(guessedWord, nextword);
+        }       
     }
     
     public static String woorden() {
@@ -160,6 +158,19 @@ public class JavaApplication17 {
                         }
                     }
                 }
+            }
+        }
+    }
+    public static void compareWord(String guessedWord, String nextword){
+        if (guessedWord.charAt(0) == nextword.charAt(0)){
+            if (guessedWord.charAt(1) == nextword.charAt(1)){
+                if (guessedWord.charAt(2) == nextword.charAt(2)){
+                    if (guessedWord.charAt(3) == nextword.charAt(3)){
+                        if (guessedWord.charAt(4) == nextword.charAt(4)){
+                            System.out.println("Great Job!");
+                        }
+                    }
+                }  
             }
         }
     }
